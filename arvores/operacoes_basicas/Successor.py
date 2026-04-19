@@ -1,7 +1,7 @@
 from  Classes import Tree
-from arvores.operacoes_basicas.tree_minimum import tree_minimum
+from operacoes_basicas.tree_minimum import tree_minimum
 
-def Successor(node=Tree.root):
+def Successor(node):
     if node.right is not None: # ------> Se não for folha e tiver filho direito
         return tree_minimum(node.right) # ------> Procure o menor valor dentre os números maiores que o node
 
